@@ -1,0 +1,50 @@
+mat-toolbar {
+  background: transparent;
+  .btnSideBar {
+    display: none;
+  }
+  .button-item {
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 0.8em;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    border-bottom: 0.5px solid rgb(175, 171, 171);
+    border-radius: 0;
+    .nav-link {
+      padding: 10px 10px;
+      padding-bottom: 7px;
+    }
+    &::before {
+      content: "";
+      height: 1.7px;
+      background-image: linear-gradient(to right, #fbbd61, #ec7532);
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover,
+    &.active {
+      background: linear-gradient(to right, #fbbd61, #ec7532);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      &::before {
+        width: 100%;
+        height: 1.7px;
+      }
+    }
+  }
+  @media only screen and (max-width: 992.98px) {
+    .header-tabs {
+      display: none;
+    }
+    .btnSideBar {
+      display: block;
+    }
+  }
+}

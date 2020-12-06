@@ -1,0 +1,37 @@
+<div class="container">
+    <mat-toolbar>
+        <span><img src="../../../assets/images/logo.svg" alt="logo" style="width: 70%;"></span>
+        <div class="mr-auto"></div>
+        <span class="example-spacer"></span>
+        <div class="header-tabs">
+            <button mat-button color="accent" class="button-item active">
+                <div class="nav-link">
+                    home
+                </div>
+            </button>
+            <button mat-button color="accent" class="button-item">
+                <div class="nav-link">
+                    what's on
+                </div>
+            </button>
+            <button mat-button color="accent" class="button-item">
+                <div class="nav-link">
+                    shortcodes
+                </div>
+            </button>
+            <button mat-button color="accent" class="button-item">
+                <div class="nav-link">
+                    news
+                </div>
+            </button>
+            <button mat-button color="accent" class="button-item">
+                <div class="nav-link">
+                    contact
+                </div>
+            </button>
+        </div>
+        <button mat-icon-button color="accent" (click)="handleToogleSideBar()" class=" btnSideBar">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-toolbar>
+</div>

@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(236, 235, 235);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #fbbd61, #ec7532);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.698);
+}

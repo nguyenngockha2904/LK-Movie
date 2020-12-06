@@ -1,0 +1,26 @@
+.nav-item {
+  .btnSidebar {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 0.8em;
+    letter-spacing: 1px;
+    position: relative;
+    border-radius: 0;
+    padding: 20px 0;
+    background: linear-gradient(to right, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &.active {
+    .btnSidebar {
+      background: linear-gradient(to right, #fbbd61, #ec7532);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}

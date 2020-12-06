@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidebar mode="over" (opened)="log('opened')" (closed)="log('closed')">
+        <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header (toogleSideBar)="sidebar.toggle()"></app-header>
+        <app-slider></app-slider>
+        <app-movie-list></app-movie-list>
+        <app-showtime-movie></app-showtime-movie>
+        <app-comming-soon></app-comming-soon>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
