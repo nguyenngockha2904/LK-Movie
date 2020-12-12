@@ -1,1 +1,24 @@
-<p>slider works!</p>
+<ngx-slick-carousel class="carousel banner-carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" [alt]="slide.img" width="100%" class="img-fluid">
+        <div class="container">
+            <div class="row ">
+                <div class="contentMovie">
+                    <p class="timeMovie">1/12/2020</p>
+                    <h1 class="namePhim">End of the World: Part II</h1>
+                    <p class="describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestiae
+                        minima
+                        aut non voluptatem saepe!</p>
+                    <div class="groupbtnplay">
+                        <button mat-flat-button color="primary" class="buttonPlay">
+                            <div class="p"><i class="material-icons">play_arrow</i>Play
+                                trailer</div>
+                        </button>
+                        <div mat-flat-button class="bghover"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</ngx-slick-carousel>

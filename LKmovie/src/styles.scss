@@ -38,3 +38,17 @@ button:hover,
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(85, 85, 85, 0.698);
 }
+.slick-initialized .slick-slide {
+  outline: 0px !important;
+}
+.title__heading {
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 0.5px solid #fbbd61;
+  font: 500 20px/28px Roboto, "Helvetica Neue", sans-serif !important;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}

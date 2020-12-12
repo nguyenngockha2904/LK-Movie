@@ -1,1 +1,23 @@
-<p>movie-item works!</p>
+<div class="movieItem">
+    <mat-card class="p-0">
+        <mat-card-content>
+            <img [src]="movieItem.hinhAnh" alt="movie" class="img-fluid">
+            <div class="groupPlayMovie">
+                <button mat-flat-button class="buttonPlay">
+                    <div class="p"> Play
+                        trailer</div>
+                </button>
+                <button mat-flat-button class="buyNow" color="warn">Buy Now</button>
+            </div>
+        </mat-card-content>
+        <mat-card-footer>
+            <p class="text-center nameMovie">{{movieItem.tenPhim}}</p>
+            <div class="text-center groupRaiting ">
+                <i class="material-icons" *ngFor="let item of listStar">
+                    star
+                </i>
+
+            </div>
+        </mat-card-footer>
+    </mat-card>
+</div>

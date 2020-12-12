@@ -1,7 +1,8 @@
-<p>movie-list works!</p>
-<div class="ml-5">
-    <app-movie-item></app-movie-item>
-    <app-movie-item></app-movie-item>
-    <app-movie-item></app-movie-item>
-    <app-movie-item></app-movie-item>
+<div class="container">
+    <div class="title__heading">Movies</div>
+    <ngx-slick-carousel class="carousel movie-list-carousel" #slickModal="slick-carousel" [config]="slideConfig1">
+        <app-movie-item ngxSlickItem class="slide" *ngFor="let movieItem of slides" [movieItem]="movieItem">
+        </app-movie-item>
+
+    </ngx-slick-carousel>
 </div>

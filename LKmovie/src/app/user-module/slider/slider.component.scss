@@ -1,0 +1,103 @@
+.banner-carousel {
+  height: 100vh;
+  position: relative;
+  .slick-arrow {
+    z-index: 95;
+    height: 20px;
+    img {
+      height: 35px;
+    }
+    &::before {
+      content: none;
+    }
+    &.slick-prev {
+      left: 30px !important;
+    }
+    &.slick-next {
+      right: 35px !important;
+    }
+  }
+  .slick-dots {
+    text-align: left;
+    padding-left: 10%;
+    bottom: 100px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    li {
+      &.slick-active {
+        button::before {
+          color: #fbbd61;
+          opacity: 1;
+        }
+      }
+      button::before {
+        font-size: 14px;
+        color: whitesmoke;
+        opacity: 0.4;
+      }
+    }
+  }
+  &:hover {
+    .slick-dots {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .contentMovie {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .timeMovie {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fbbd61;
+    }
+    .namePhim {
+      font-size: 52px;
+      font-weight: 300;
+      font: medium 300 16px/40px;
+      padding: 0;
+      letter-spacing: 3px;
+      color: #fff;
+      border: none;
+      margin: 20px 0;
+    }
+    .groupbtnplay {
+      position: relative;
+      border-radius: 10px;
+      display: inline-block;
+      overflow: hidden;
+      .buttonPlay {
+        background: linear-gradient(to bottom, #fbbd61, #ec7532);
+        .p {
+          position: relative;
+          z-index: 1;
+          margin: 0;
+          display: flex;
+          align-items: center;
+        }
+        &::before {
+          content: "";
+          width: 0;
+          height: 100%;
+          background: #ec7532;
+          position: absolute;
+          bottom: 0;
+          transform: skewX(30deg);
+          transition: all 0.3s ease;
+          left: -15px;
+          z-index: 0;
+        }
+      }
+      &:hover {
+        .buttonPlay {
+          &::before {
+            width: 145%;
+          }
+        }
+      }
+    }
+  }
+}

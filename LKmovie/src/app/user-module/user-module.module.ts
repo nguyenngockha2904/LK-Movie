@@ -15,9 +15,24 @@ import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { DetailMoviePageComponent } from './detail-movie-page/detail-movie-page.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @NgModule({
-  declarations: [UserMouduleComponent, HeaderComponent, SliderComponent, MovieListComponent, MovieItemComponent, ShowtimeMovieComponent, ShowtimeMovieItemComponent, CommingSoonComponent, CmMoiveItemComponent, FooterComponent, HomePageComponent, DetailMoviePageComponent, SidenavComponent],
-  imports: [CommonModule, MaterialModule, FormsModule],
+  declarations: [
+    UserMouduleComponent,
+    HeaderComponent,
+    SliderComponent,
+    MovieListComponent,
+    MovieItemComponent,
+    ShowtimeMovieComponent,
+    ShowtimeMovieItemComponent,
+    CommingSoonComponent,
+    CmMoiveItemComponent,
+    FooterComponent,
+    HomePageComponent,
+    DetailMoviePageComponent,
+    SidenavComponent,
+  ],
+  imports: [CommonModule, MaterialModule, FormsModule, SlickCarouselModule],
   exports: [UserMouduleComponent],
 })
 export class UserModuleModule {}

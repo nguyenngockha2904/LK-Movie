@@ -6,8 +6,17 @@ mat-sidenav-container {
     flex: 1 1;
   }
   mat-sidenav {
-    background-color: $candy-app-primary;
     width: 200px;
     box-shadow: 0px 10px 30px #f0732ba3;
+  }
+}
+app-header {
+  position: absolute;
+  top: 58px;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  @media only screen and (max-width: 992.98px) {
+    top: 0;
   }
 }

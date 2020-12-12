@@ -1,0 +1,36 @@
+.movie-list-carousel {
+  .slick-arrow {
+    z-index: 95;
+    height: 20px;
+    img {
+      height: 35px;
+    }
+    &::before {
+      //   content: none;
+    }
+    &.slick-prev {
+      left: 30px !important;
+    }
+    &.slick-next {
+      right: 35px !important;
+    }
+  }
+  .slick-dots {
+    li {
+      &.slick-active {
+        button::before {
+          color: #fbbd61;
+          opacity: 1;
+        }
+      }
+      button::before {
+        font-size: 10px;
+        color: whitesmoke;
+        opacity: 0.4;
+      }
+    }
+  }
+  app-movie-item {
+    padding: 5px;
+  }
+}
