@@ -1,0 +1,26 @@
+.groupTab {
+  .input-group-btn {
+    button {
+      color: #fbbd61;
+      margin: 10px 20px;
+      font-size: 15px;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(to bottom, #fbbd61, #ec7532);
+      -webkit-background-clip: text;
+      &.active {
+        border: 2px solid #fbbd61;
+        box-shadow: 0 10px 30px rgba(251, 189, 97, 0.727);
+      }
+    }
+  }
+}
+
+.list-showtime-movie {
+  margin: 20px 0;
+  app-showtime-movie-item:last-child {
+    .movieItem {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,8 +1,77 @@
 <!-- group buttons -->
-<p>showtime-moive worked!</p>
-<div class="ml-5">
-    <app-showtime-movie-item></app-showtime-movie-item>
-    <app-showtime-movie-item></app-showtime-movie-item>
-    <app-showtime-movie-item></app-showtime-movie-item>
-    <app-showtime-movie-item></app-showtime-movie-item>
+<div class="container">
+    <div class="input-group mt-5 groupTab">
+        <span class="input-group-btn">
+            <button mat-fab color="accent" type="button" [ngClass]="{'active':isTab=='MON'}"
+                (click)="handleChangeTab('MON')">MON</button>
+        </span>
+        <span class="input-group-btn">
+            <button mat-fab color="accent" type="button" [ngClass]="{'active':isTab=='TUE'}"
+                (click)="handleChangeTab('TUE')">TUE</button>
+        </span>
+        <span class="input-group-btn">
+            <button mat-fab color="accent" type="button" [ngClass]="{'active':isTab=='WEN'}"
+                (click)="handleChangeTab('WEN')">WEN</button>
+        </span>
+        <span class="input-group-btn">
+            <button mat-fab color="accent" type="button" [ngClass]="{'active':isTab=='THU'}"
+                (click)="handleChangeTab('THU')">THU</button>
+        </span>
+        <span class="input-group-btn">
+            <button mat-fab color="accent" type="button" [ngClass]="{'active':isTab=='FRI'}"
+                (click)="handleChangeTab('FRI')">FRI</button>
+        </span>
+        <span class="input-group-btn">
+            <button mat-fab color="accent" type="button" [ngClass]="{'active':isTab=='SAT'}"
+                (click)="handleChangeTab('SAT')">SAT</button>
+        </span>
+        <span class="input-group-btn">
+            <button mat-fab color="accent" type="button" [ngClass]="{'active':isTab=='SUN'}"
+                (click)="handleChangeTab('SUN')">SUN</button>
+        </span>
+    </div>
+    <div class="list-showtime-movie" [ngSwitch]="isTab">
+        <div *ngSwitchCase="'MON'">
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+        </div>
+        <div *ngSwitchCase="'TUE'">
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+        </div>
+        <div *ngSwitchCase="'WEN'">
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+        </div>
+        <div *ngSwitchCase="'THU'">
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+        </div>
+        <div *ngSwitchCase="'FRI'">
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+
+        </div>
+        <div *ngSwitchCase="'SAT'">
+            <app-showtime-movie-item></app-showtime-movie-item>
+            <app-showtime-movie-item></app-showtime-movie-item>
+        </div>
+        <div *ngSwitchCase="'SUN'">
+            <app-showtime-movie-item></app-showtime-movie-item>
+        </div>
+    </div>
+
+
+
 </div>

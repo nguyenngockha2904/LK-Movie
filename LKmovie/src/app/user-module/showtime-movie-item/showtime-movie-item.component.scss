@@ -1,0 +1,58 @@
+.movieItem {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fbbd61b9;
+  .moive_img {
+    img {
+      border-radius: 10px;
+    }
+  }
+  .movie_content {
+    .movie_time {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fbbd61;
+    }
+    .movie_name {
+      font-size: 30px;
+      font-weight: 300;
+      padding: 0;
+      letter-spacing: 2px;
+      color: #fff;
+      border: none;
+      margin: 20px 0;
+    }
+    .movie_desc {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: whitesmoke;
+    }
+    .movie_viewInfoButton {
+      background: linear-gradient(to bottom, #fbbd61b9, #ec7632a4);
+      transition: all 0.3s ease-in;
+      &:hover {
+        background: linear-gradient(to bottom, #fbbd61, #ec7532);
+      }
+    }
+    .movie-time_show {
+      margin: 10px 0;
+      .time-show-item {
+        margin-right: 10px;
+        button {
+          color: #fbbd61;
+          margin: 10px 20px;
+          font-size: 15px;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background: linear-gradient(to bottom, #fbbd61, #ec7532);
+          -webkit-background-clip: text;
+          border: 1px solid #fbbd61;
+          &:hover {
+            box-shadow: 0 10px 30px #fbbd61 !important;
+            border: 1px solid #fbbd61;
+          }
+        }
+      }
+    }
+  }
+}
