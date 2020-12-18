@@ -1,12 +1,64 @@
-<div class="wapper">
+<div class="cm-wapper" style="background: url(../../../assets/images/slide/slide-1.png); background-color: #060600;">
     <div class="container">
         <div class="title__heading">Comming soon</div>
         <div class="row">
-            <div class="col-lg-7 col-12 cm-movie-content">
-                <div class="movie-time">
-                    ACTION, ADVENTURE, SCI-FI
-                </div>
+            <div class="col-lg-6 col-12 " style="position: relative;">
+                <div class="cm-movie-content">
+                    <div class="movie-time">
+                        21-12-2020
 
+                    </div>
+                    <div class="movie-name-banner">
+                        X-Men: Days of Fulture Past
+                    </div>
+                    <div class="raiting">
+                        <i class="material-icons">
+                            star
+                        </i>
+                        <i class="material-icons">
+                            star
+                        </i>
+                        <i class="material-icons">
+                            star
+                        </i>
+                        <i class="material-icons">
+                            star
+                        </i>
+                        <i class="material-icons">
+                            star
+                        </i>
+                    </div>
+                    <div class="movie-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, deserunt. Dicta mollitia cum iste
+                        delectus.
+                    </div>
+                    <div class="groupbtnplay">
+                        <button mat-flat-button class="buttonPlay">
+                            <p>more info</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 cm-movie-img">
+                <img src="../../../assets/images/slide/slide-1-video.png" alt="movie-img" class="img-fluid">
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-12">
+                <ngx-slick-carousel class="carousel cm-carousel" #slickModal="slick-carousel" [config]="slideConfig1">
+                    <div ngxSlickItem class="slide p-2" *ngFor="let movieItem of slides">
+
+                        <button mat-flat-button class="p-0 btn-movie-cm">
+                            <img [src]="movieItem.hinhAnh" alt="movie" class="img-fluid w-100">
+
+                        </button>
+                        <div class="content-cm-movie">
+                            <div class="movie-name text-center">
+                                {{movieItem.tenPhim}}
+                            </div>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
             </div>
         </div>
     </div>

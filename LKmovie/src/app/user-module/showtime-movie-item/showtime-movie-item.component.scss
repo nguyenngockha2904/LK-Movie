@@ -15,17 +15,28 @@
     }
     .movie_name {
       font-size: 30px;
-      font-weight: 300;
       padding: 0;
       letter-spacing: 2px;
       color: #fff;
       border: none;
       margin: 20px 0;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(to bottom, #fbbd61, #ec7532);
+      -webkit-background-clip: text;
+      line-height: 1;
+      font-weight: 500;
     }
     .movie_desc {
-      font-size: 14px;
-      letter-spacing: 1px;
-      color: whitesmoke;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(to bottom, #d3b383, #9e9e9e);
+      -webkit-background-clip: text;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      line-height: 2;
+      margin-bottom: 10px;
     }
     .movie_viewInfoButton {
       background: linear-gradient(to bottom, #fbbd61b9, #ec7632a4);

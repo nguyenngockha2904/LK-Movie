@@ -3,9 +3,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserModuleModule } from './user-module/user-module.module';
+import { AdminModuleModule } from './admin-module/admin-module.module';
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, UserModuleModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    UserModuleModule,
+    AdminModuleModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

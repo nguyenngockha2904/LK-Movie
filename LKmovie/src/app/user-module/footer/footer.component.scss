@@ -1,0 +1,44 @@
+.contact-area {
+  background-color: whitesmoke;
+  padding: 25px;
+  text-align: center;
+  .text-contact {
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+  }
+  .number-contact {
+    color: #ec7532;
+    font-size: 3em;
+    font-weight: 400;
+  }
+}
+
+.footer-area {
+  padding: 20px 0;
+  .title-col {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to bottom, #fbbd61, #ec7532);
+    -webkit-background-clip: text;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 2;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  .content-col {
+    font-size: 13px;
+    padding: 3px 0;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .pricey {
+    text-align: center;
+  }
+}
