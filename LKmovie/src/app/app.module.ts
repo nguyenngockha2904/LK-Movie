@@ -2,16 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UserModuleModule } from './user-module/user-module.module';
-import { AdminModuleModule } from './admin-module/admin-module.module';
+
+import { AppRoutingModule } from './app-routing/app-routing.module';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    UserModuleModule,
-    AdminModuleModule,
-  ],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

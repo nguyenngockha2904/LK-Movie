@@ -16,6 +16,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { DetailMoviePageComponent } from './detail-movie-page/detail-movie-page.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { RouterModule, Routes } from '@angular/router';
+const routes: Routes = [{ path: '', component: HomePageComponent }];
+
 @NgModule({
   declarations: [
     UserMouduleComponent,
@@ -32,7 +35,13 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     DetailMoviePageComponent,
     SidenavComponent,
   ],
-  imports: [CommonModule, MaterialModule, FormsModule, SlickCarouselModule],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    FormsModule,
+    SlickCarouselModule,
+    RouterModule.forChild(routes),
+  ],
   exports: [UserMouduleComponent],
 })
 export class UserModuleModule {}

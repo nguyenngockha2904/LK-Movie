@@ -7,6 +7,6 @@ public class AddNewCumRapDTO {
 	private int HETHONGRAP_ID;
 	private String TENCUMRAP;
 	private String BIDANH;
-	private String LOGO;
 	private String DIACHI;
+	private String IMAGE;
 }

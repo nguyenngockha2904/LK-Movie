@@ -3,9 +3,10 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
     <mat-toolbar><span><img src="../../../assets/images/logo.svg" alt="logo" style="height: 37px;"></span></mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLink="/admin/movies" routerLinkActive="active">Movies</a>
+      <a mat-list-item routerLink="/admin/users" routerLinkActive="active">Users</a>
+      <a mat-list-item routerLink="/admin/hethongrap-cumrap" routerLinkActive="active">Hệ Thống rạp</a>
+      <a mat-list-item routerLink="/admin/rap-ghe" routerLinkActive="active">Rạp</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -14,5 +15,6 @@
       <button mat-button style="color: #000;"><span class="material-icons mr-2">person</span>Kha nguyễn</button>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

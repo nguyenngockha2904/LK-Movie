@@ -14,4 +14,7 @@ public interface GheRepository extends JpaRepository<Ghe, Integer> {
 	
 	@Query("SELECT MAX(d.GHE_ID) FROM Ghe d")
 	int maxGhe_ID();
+	
+	@Query("SELECT d.MAGHE FROM Ghe d WHERE d.GHE_ID = :id")
+	String findMaGhe(int id);
 }

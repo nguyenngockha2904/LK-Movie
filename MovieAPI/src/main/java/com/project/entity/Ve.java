@@ -24,7 +24,6 @@ public class Ve {
 	
 	private int USER_ID;
 	
-
 	private int LICHCHIEU_ID;
 	
 	@ManyToOne

@@ -25,7 +25,6 @@ public class HeThongRap {
 	private String BIDANH;
 	private String LOGO;
 	
-	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "hethongrap")
 	@JsonIgnore
 	private Set<CumRap> cumrap;

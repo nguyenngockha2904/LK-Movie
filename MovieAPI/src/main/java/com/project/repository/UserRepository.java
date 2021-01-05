@@ -16,7 +16,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	 User findEmailDuplicate(@Param("EMAIL") String email);
 	
 	@Query("SELECT d FROM User d WHERE d.USERNAME = :USERNAME")
-	User findUserNameDuplicate(@Param("USERNAME") String USERNAME);
+	User findUserNameDuplicate(String USERNAME);
 	
 	@Query("SELECT d FROM User d WHERE d.SDT = :SDT")
 	User findSDTDuplicate(@Param("SDT") String SDT);
@@ -27,5 +27,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 	@Query("SELECT MAX(d.USER_ID) FROM User d")
 	int maxUser_ID();
 	
+	@Query("SELECT d FROM User d WHERE d.USERNAME = :USERNAME")
+	User findByUserName(String USERNAME);
 	
 }	
